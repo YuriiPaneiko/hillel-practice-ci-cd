@@ -13,4 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
+      working-directory: HW11-Docker-containers
       run: docker build . --file HW11-Docker-containers/Dockerfile --tag hillel-practice:$(date +%s)
